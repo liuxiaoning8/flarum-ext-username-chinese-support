@@ -1,6 +1,5 @@
 <?php
 
-use Flarum\Extend;
 use Flarum\Foundation\Event\Validating;
 use Flarum\User\UserValidator;
 use Illuminate\Events\Dispatcher;
@@ -8,7 +7,6 @@ use Illuminate\Events\Dispatcher;
 return function (Dispatcher $events) {
     $events->listen(Validating::class, function (Validating $event){
         if ($event->type instanceof UserValidator) {
-
             $rules = $event->validator->getRules();
             if (isset($rules['username'])) {
                 foreach ($rules['username'] as $k => $v) {
