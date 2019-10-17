@@ -1,0 +1,29 @@
+{
+  "name": "xmugenx/flarum-ext-username-chinese-support",
+  "description": "Support Chinese username and lower min characters to 2.",
+  "type": "flarum-extension",
+  "keywords": ["flarum", "username", "chinese"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "xmugenx"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/xmugenx/flarum-ext-username-chinese-support/issues",
+    "source": "https://github.com/xmugenx/flarum-ext-username-chinese-support"
+  },
+  "require": {
+    "flarum/core": "^0.1.0"
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "username chinese support",
+      "icon": {
+        "name": "far fa-envelope",
+        "backgroundColor": "#83AF9B",
+        "color": "#fff"
+      }
+    }
+  }
+}
